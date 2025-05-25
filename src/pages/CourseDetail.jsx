@@ -249,7 +249,7 @@ export default function CourseDetail() {
           
           {/* 1. แบรนด์ / คำอธิบาย */}
           <div>
-            <img src="/images/logo.png" alt="MustDev Tech" className="h-10 mb-4" />
+            <img src="/images/logo_mustdevtech_circle.png" alt="MustDev Tech" className="h-10 mb-4" />
             <p>แพลตฟอร์มการเรียนออนไลน์ สำหรับคนที่ต้องการก้าวหน้า</p>
             <p>สอนโดยผู้มีประสบการณ์จริง</p>
 
@@ -257,10 +257,10 @@ export default function CourseDetail() {
               <p className="font-semibold mb-2">ดาวน์โหลดแอป:</p>
               <div className="flex gap-3">
                 <a href="https://play.google.com" target="_blank" rel="noreferrer">
-                  <img src="/static/icons/footer/google-play.svg" alt="Google Play" className="h-10" />
+                  <img src="/images/logo_mustdevtech_circle.png" alt="Google Play" className="h-10" />
                 </a>
                 <a href="https://apps.apple.com" target="_blank" rel="noreferrer">
-                  <img src="/static/icons/footer/app-store.svg" alt="App Store" className="h-10" />
+                  <img src="/images/logo_mustdevtech_circle.png" alt="App Store" className="h-10" />
                 </a>
               </div>
             </div>
