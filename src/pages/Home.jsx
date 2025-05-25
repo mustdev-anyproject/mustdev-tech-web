@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import courseData from '../data/courses.json';
 
 export default function Home() {
   const slides = [
@@ -11,68 +12,21 @@ export default function Home() {
     '/images/banner3.jpg'
   ];
 
-  const courses = [
-  {
-    id: 1,
-    title: 'คอร์ส Arduino พื้นฐาน',
-    instructor: 'สอนตั้งแต่เริ่ม พาทำโปรเจค โดยใช้อุปกรณ์ที่เรียนรู้ Arduino , จอ LCD , Sensor ต่าง ๆ',
-    position: 'MustDev Tech',
-    image: '/images/course1.jpg',
-    price: 590,
-    original: 1590,
-  },
-  {
-    id: 2,
-    title: 'คอร์ส IoT พื้นฐาน',
-    instructor: 'Esp8266 - Blynk,Line,GoogleSheet,Telegram',
-    position: 'MustDev Tech',
-    image: '/images/course2.jpg',
-    price: 790,
-    original: 1790,
-  },
-  {
-    id: 3,
-    title: 'เร็ว ๆ นี้',
-    instructor: '',
-    position: 'MustDev Tech',
-    image: '/images/comingsoon.jpg',
-    price: null,
-    original: null,
-  },
-  {
-    id: 4,
-    title: 'เร็ว ๆ นี้',
-    instructor: '',
-    position: 'MustDev Tech',
-    image: '/images/comingsoon.jpg',
-    price: null,
-    original: null,
-  },
-  {
-    id: 5,
-    title: 'เร็ว ๆ นี้',
-    instructor: '',
-    position: 'MustDev Tech',
-    image: '/images/comingsoon.jpg',
-    price: null,
-    original: null,
-  },
-];
-
-
   return (
     <div className="bg-white text-gray-800">
       <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-green-600">Must Dev Tech</h1>
-          <nav className="space-x-6 text-sm font-medium">
+        <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+          <h1 className="text-2xl font-bold text-green-600 text-center md:text-left">Must Dev Tech</h1>
+          <nav className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 text-sm font-medium">
             <Link to="/" className="text-gray-700 hover:text-green-600">หน้าแรก</Link>
             <Link to="/courses" className="text-gray-700 hover:text-green-600">คอร์สทั้งหมด</Link>
             <a href="#" className="text-gray-700 hover:text-green-600">เข้าสู่ระบบ</a>
-            <a href="#" className="text-white bg-green-600 px-4 py-2 rounded-full hover:bg-green-700">สมัครสมาชิก</a>
+            <a href="#" className="text-white bg-green-600 px-4 py-2 rounded-full hover:bg-green-700 whitespace-nowrap">สมัครสมาชิก</a>
           </nav>
         </div>
       </header>
+
+
 
       <section className="w-full">
         <Swiper navigation modules={[Navigation]} loop className="h-[300px]">
@@ -88,7 +42,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <h2 className="text-2xl font-bold mb-6">คอร์สใหม่ล่าสุด</h2>
           <Swiper spaceBetween={20} slidesPerView={1.2} breakpoints={{640:{slidesPerView:2.2},1024:{slidesPerView:3.2}}}>
-            {courses.map((course) => (
+            {courseData.map((course) => (
               <SwiperSlide key={course.id}>
                 <div className="bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
                   <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
