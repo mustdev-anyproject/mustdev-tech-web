@@ -16,12 +16,11 @@ export default function Home() {
     <div className="bg-white text-gray-800">
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-          <h1 className="text-2xl font-bold text-green-600 text-center md:text-left">Must Dev Tech</h1>
+          <h1 className="text-2xl font-bold text-green-600 text-center md:text-left">MustDev Tech</h1>
           <nav className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 text-sm font-medium">
             <Link to="/" className="text-gray-700 hover:text-green-600">หน้าแรก</Link>
-            <Link to="/courses" className="text-gray-700 hover:text-green-600">คอร์สทั้งหมด</Link>
-            <a href="#" className="text-gray-700 hover:text-green-600">เข้าสู่ระบบ</a>
-            <a href="#" className="text-white bg-green-600 px-4 py-2 rounded-full hover:bg-green-700 whitespace-nowrap">สมัครสมาชิก</a>
+            {/* <a href="#" className="text-gray-700 hover:text-green-600">เข้าสู่ระบบ</a>
+            <a href="#" className="text-white bg-green-600 px-4 py-2 rounded-full hover:bg-green-700 whitespace-nowrap">สมัครสมาชิก</a> */}
           </nav>
         </div>
       </header>
@@ -71,7 +70,7 @@ export default function Home() {
       </section>
 
       <footer className="bg-gray-100 py-6 text-center text-sm text-gray-500">
-        &copy; 2025 Must Dev Tech. All rights reserved.
+        &copy; 2025 MustDev Tech. All rights reserved.
       </footer>
     </div>
   );

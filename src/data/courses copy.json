@@ -42,7 +42,7 @@
     "instructorInfo": {
       "name": "Must Dev Tech",
       "avatar": "/images/logo_mustdevtech_circle.png",
-      "link": "https://www.facebook.com/MustDevTech",
+      "link": "/about",
       "bio": [
         "ทีมผู้เชี่ยวชาญด้าน Arduino, IoT และ Embedded System",
         "มีประสบการณ์การสอนมากกว่า 5 ปี",
